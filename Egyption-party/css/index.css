@@ -1,0 +1,176 @@
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url(../images/main-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  overflow: hidden;
+}
+
+html,
+body {
+  scroll-behavior: auto !important;
+}
+.hero-section h1 {
+  font-size: 68px;
+  transition: 0.5s;
+}
+.hero-section p {
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.hero-section::before {
+  content: "";
+  background-color: rgba(156, 23, 23, 0.486);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.open {
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+aside {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  text-align: right;
+  transition: 0.5s;
+  transform: translateX(-100%);
+  opacity: 0.7;
+}
+
+aside i {
+  text-align: right;
+  transition: 0.5s;
+}
+
+aside ul {
+  text-align: left;
+}
+aside i {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+aside ul li a {
+  color: #fff;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+aside ul li a:hover,
+aside > i:hover {
+  color: rgb(109, 3, 3);
+}
+
+.singers .singer h3 {
+  background-color: rgb(255, 139, 139);
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.singers .singer p {
+  background-color: rgb(227, 227, 227);
+  font-size: 18px;
+}
+
+.singers .singer:not(:first-child) p {
+  display: none;
+}
+
+.counter {
+  position: relative;
+  z-index: 1;
+  background-image: url(../images/invitation-2508607__340.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.counter::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  z-index: -1;
+}
+
+.time {
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.join-us h2,
+.join-us h5 {
+  color: #444;
+  font-weight: 700;
+}
+
+.join-us h5 {
+  font-weight: 900;
+}
+.join-us p {
+  color: #777;
+}
+
+.mail {
+  color: rgb(209, 0, 0);
+}
+
+.join-us i {
+  color: #777;
+  transition: 0.5s;
+}
+
+.join-us .social-icons a {
+  border: 1px solid #777;
+  transition: 0.5s;
+}
+
+.join-us .social-icons a:hover {
+  background-color: rgb(209, 0, 0);
+  border: 1px solid rgb(209, 0, 0);
+}
+
+.join-us .social-icons a:hover i {
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  height: 200px;
+  max-height: 250px;
+}
+
+form p span {
+  color: rgb(229, 0, 0);
+}
